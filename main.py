@@ -16,7 +16,7 @@ def add_header(response):
 def home():
     #Weather API
     city = 'toronto'
-    key = '4b8b45ae17a4dbff93ae42c6d35c8fc6'
+    key = ''
     url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={key}"
     response = requests.get(url)
     data = response.json()
